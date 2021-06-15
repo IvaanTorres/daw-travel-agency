@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="482.0" prefWidth="1043.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proyectoFinal.vista.carrito.carritoController">
+    <children>
+      <Pane prefHeight="476.0" prefWidth="1043.0" style="-fx-background-color: white;">
+         <children>
+            <TableView fx:id="carrito" layoutX="71.0" layoutY="92.0" onMouseClicked="#borrarActividad" prefHeight="323.0" prefWidth="569.0">
+              <columns>
+                <TableColumn fx:id="nombre" prefWidth="137.0" text="Nombre" />
+                  <TableColumn fx:id="numPers" prefWidth="60.0" text="Nº Pers." />
+                  <TableColumn fx:id="precioInd" prefWidth="70.0" text="Precio Ind" />
+                  <TableColumn fx:id="fechaInicio" text="Fecha inicio" />
+                  <TableColumn fx:id="fechaFin" text="Fecha fin" />
+                  <TableColumn fx:id="precioTotal" prefWidth="89.33334350585938" text="Precio total" />
+                  <TableColumn fx:id="borrar" prefWidth="50.66668701171875" text="Borrar" />
+              </columns>
+            </TableView>
+            <Label layoutX="473.0" layoutY="21.0" style="-fx-font-size: 30px; -fx-font-weight: bold;" text="CARRITO" textFill="#626262" />
+            <Button fx:id="confirmar" layoutX="888.0" layoutY="415.0" mnemonicParsing="false" onAction="#confirmarPack" prefHeight="33.0" prefWidth="129.0" style="-fx-background-color: #85CAE3; -fx-font-weight: bold; -fx-text-fill: white; -fx-border-color: #626262; -fx-border-radius: 10; -fx-background-radius: 10;" text="CONFIRMAR" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Label fx:id="precioFinal" layoutX="658.0" layoutY="345.0" style="-fx-font-size: 20; -fx-font-weight: bold;" text="Precio final: " textFill="#626262" />
+            <TextArea fx:id="descripcion" layoutX="658.0" layoutY="92.0" prefHeight="238.0" prefWidth="317.0" promptText="Descripcion del pack" />
+         </children></Pane>
+    </children>
+</StackPane>

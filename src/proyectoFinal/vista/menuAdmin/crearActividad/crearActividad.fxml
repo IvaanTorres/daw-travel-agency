@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="1043.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proyectoFinal.vista.menuAdmin.crearActividad.crearActividadController">
+    <children>
+      <Pane prefHeight="413.0" prefWidth="742.0" style="-fx-background-color: white;">
+         <children>
+            <TextField fx:id="nombre" layoutX="138.0" layoutY="139.0" prefHeight="25.0" prefWidth="200.0" promptText="|" style="-fx-background-color: white; -fx-border-color: #85CAE3; -fx-border-style: hidden hidden solid hidden; -fx-border-width: 3px; -fx-font-size: 16;">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <Label layoutX="72.0" layoutY="152.0" style="-fx-font-weight: bold;" text="Nombre:" textFill="#626262" />
+            <Label alignment="CENTER" layoutX="205.0" layoutY="24.0" prefHeight="45.0" prefWidth="633.0" style="-fx-font-size: 30; -fx-font-weight: bold;" text="CREAR NUEVA ACTIVIDAD" textFill="#626262" />
+            <Label layoutX="57.0" layoutY="239.0" style="-fx-font-weight: bold;" text="Descripción:" textFill="#626262" />
+            <TextArea fx:id="descripcion" layoutX="140.0" layoutY="239.0" prefHeight="70.0" prefWidth="200.0" style="-fx-background-color: white; -fx-border-color: #85CAE3;" />
+            <Label layoutX="97.0" layoutY="354.0" style="-fx-font-weight: bold;" text="URL:" textFill="#626262" />
+            <Label layoutX="441.0" layoutY="354.0" style="-fx-font-weight: bold;" text="Precio:" textFill="#626262" />
+            <Label layoutX="428.0" layoutY="161.0" style="-fx-font-weight: bold;" text="Calidad:" textFill="#626262" />
+            <Label layoutX="451.0" layoutY="266.0" style="-fx-font-weight: bold;" text="Tipo:" textFill="#626262" />
+            <Label layoutX="765.0" layoutY="307.0" style="-fx-font-weight: bold;" text="Imagen:" textFill="#626262" />
+            <Button fx:id="botonCrear" layoutX="823.0" layoutY="395.0" mnemonicParsing="false" onAction="#crearActividad" prefHeight="45.0" prefWidth="200.0" style="-fx-background-color: #85CAE3; -fx-border-color: #626262; -fx-border-width: 1; -fx-font-weight: bold; -fx-border-radius: 10; -fx-background-radius: 10;" text="CREAR ACTIVIDAD" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <TextField fx:id="url" layoutX="140.0" layoutY="341.0" prefHeight="25.0" prefWidth="200.0" promptText="|" style="-fx-background-color: white; -fx-border-color: #85CAE3; -fx-border-style: hidden hidden solid hidden; -fx-border-width: 3px; -fx-font-size: 16;" />
+            <TextField fx:id="precio" layoutX="492.0" layoutY="341.0" prefHeight="25.0" prefWidth="200.0" promptText="|" style="-fx-background-color: white; -fx-border-color: #85CAE3; -fx-border-style: hidden hidden solid hidden; -fx-border-width: 3px; -fx-font-size: 16;" />
+            <Button fx:id="imagenBoton" layoutX="823.0" layoutY="303.0" mnemonicParsing="false" onAction="#elegirImagen" prefHeight="25.0" prefWidth="200.0" text="Elegir imagen" />
+            <Label fx:id="rutaIMG" layoutX="823.0" layoutY="274.0" prefHeight="17.0" prefWidth="200.0" />
+            <ImageView fx:id="imgView" fitHeight="150.0" fitWidth="200.0" layoutX="823.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true" />
+            <JFXComboBox fx:id="tipoBox" focusColor="#85cae3" layoutX="492.0" layoutY="262.0" prefHeight="25.0" prefWidth="200.0" unFocusColor="#85cae3" />
+            <SVGPath fx:id="cal5" content="M 0.000 4.000L 5.878 8.090L 3.804 1.236L 9.511 -3.090L 2.351 -3.236L 0.000 -10.000L -2.351 -3.236L -9.511 -3.090L -3.804 1.236L -5.878 8.090L 0.000 4.000" fill="#0073ff" layoutX="619.0" layoutY="170.0" onMouseClicked="#selecCalidad" />
+            <SVGPath fx:id="cal4" content="M 0.000 4.000L 5.878 8.090L 3.804 1.236L 9.511 -3.090L 2.351 -3.236L 0.000 -10.000L -2.351 -3.236L -9.511 -3.090L -3.804 1.236L -5.878 8.090L 0.000 4.000" fill="#0073ff" layoutX="592.0" layoutY="170.0" onMouseClicked="#selecCalidad" />
+            <SVGPath fx:id="cal3" content="M 0.000 4.000L 5.878 8.090L 3.804 1.236L 9.511 -3.090L 2.351 -3.236L 0.000 -10.000L -2.351 -3.236L -9.511 -3.090L -3.804 1.236L -5.878 8.090L 0.000 4.000" fill="#0073ff" layoutX="560.0" layoutY="170.0" onMouseClicked="#selecCalidad" />
+            <SVGPath fx:id="cal2" content="M 0.000 4.000L 5.878 8.090L 3.804 1.236L 9.511 -3.090L 2.351 -3.236L 0.000 -10.000L -2.351 -3.236L -9.511 -3.090L -3.804 1.236L -5.878 8.090L 0.000 4.000" fill="#0073ff" layoutX="531.0" layoutY="170.0" onMouseClicked="#selecCalidad" />
+            <SVGPath fx:id="cal1" content="M 0.000 4.000L 5.878 8.090L 3.804 1.236L 9.511 -3.090L 2.351 -3.236L 0.000 -10.000L -2.351 -3.236L -9.511 -3.090L -3.804 1.236L -5.878 8.090L 0.000 4.000" fill="#0073ff" layoutX="502.0" layoutY="170.0" onMouseClicked="#selecCalidad" />
+         </children></Pane>
+    </children>
+</StackPane>
