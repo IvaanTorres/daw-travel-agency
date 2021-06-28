@@ -1,4 +1,4 @@
-Java Final project 1º DAW (BAC+1)
+# Java Final project 1º DAW (BAC+1)
 
 My team and I developed this app in 2/3 weeks as the "Programming" final project.
 As the first high-education year, we learn the bases of OOP thanks Java. We get the basic knowledge of programming besides MySQL concepts focused on Java environment.
