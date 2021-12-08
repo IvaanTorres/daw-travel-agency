@@ -50,6 +50,7 @@ It has its own admin menu, logging & role system and also, it creates a PDF tick
 
 ### JavaFX SDK & Javadoc
 
+- Download JavaFX (SDK & Javadoc) here: https://gluonhq.com/products/javafx/
 - Create a new library in the project and set all .jar files from "javafx-sdk-17.0.1/lib" into "Classpath" section.
 - Without leaving the library, set the directory "javafx-17.0.1-javadoc" itself into the "Javadoc" section.
 
