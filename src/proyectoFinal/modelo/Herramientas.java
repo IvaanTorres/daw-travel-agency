@@ -106,27 +106,6 @@ public class Herramientas {
         notif.darkStyle();
         notif.showInformation();
     }
-    
-//    public boolean showAlertConf(String conf){
-//        Button b = new Button("Confirmation alert");
-//        Button b1 = new Button("Confirmation alert");
-//        
-//        Notifications notif = Notifications.create()
-//            .title("CONFIRMATION")
-//            .text(conf)
-//            .graphic(null)
-//            .hideAfter(Duration.seconds(5))
-//            .position(Pos.BOTTOM_RIGHT)
-//            .onAction(new EventHandler<ActionEvent>() {
-//                @Override
-//                public void handle(ActionEvent event) {
-//                    System.out.println(conf);
-//                }
-//            });
-//        notif.darkStyle();
-//        notif.showConfirm();
-//        return true;
-//    }
 
     public boolean showAlertConf(String conf) {
         Alert alerta = new Alert(Alert.AlertType.CONFIRMATION);

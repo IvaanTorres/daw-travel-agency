@@ -15,7 +15,7 @@ public class Usuario {
     private String nombre;
     private String mail;
     private int telefono;
-    private long tarjeta;
+    private int tarjeta;
     private String pwd;
 
     public Usuario(String nombre, String mail, int telefono, int tarjeta, String pwd) {
@@ -81,6 +81,4 @@ public class Usuario {
     public void setPwd(String pwd) {
         this.pwd = pwd;
     }
-    
-    
 }

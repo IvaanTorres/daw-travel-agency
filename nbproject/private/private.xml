@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/Equipo/Downloads/Final-project-DAW1-BAC-1-main/src/proyectoFinal/vista/actividades/actividadesController.java</file>
+            <file>file:/C:/Users/Equipo/Downloads/Final-project-DAW1-BAC-1-main/src/proyectoFinal/modelo/Usuario.java</file>
+            <file>file:/C:/Users/Equipo/Downloads/Final-project-DAW1-BAC-1-main/src/proyectoFinal/vista/detalles/detallesController.java</file>
+            <file>file:/C:/Users/Equipo/Downloads/Final-project-DAW1-BAC-1-main/src/proyectoFinal/modelo/DetallePack.java</file>
+            <file>file:/C:/Users/Equipo/Downloads/Final-project-DAW1-BAC-1-main/src/proyectoFinal/datos/bda/conexionDAO.java</file>
+            <file>file:/C:/Users/Equipo/Downloads/Final-project-DAW1-BAC-1-main/src/proyectoFinal/modelo/Herramientas.java</file>
+            <file>file:/C:/Users/Equipo/Downloads/Final-project-DAW1-BAC-1-main/src/proyectoFinal/vista/login/register/registerController.java</file>
+            <file>file:/C:/Users/Equipo/Downloads/Final-project-DAW1-BAC-1-main/src/proyectoFinal/vista/menuAdmin/listarModBor/listarModBorController.java</file>
+            <file>file:/C:/Users/Equipo/Downloads/Final-project-DAW1-BAC-1-main/src/proyectoFinal/datos/bda/usuarioDAO.java</file>
+            <file>file:/C:/Users/Equipo/Downloads/Final-project-DAW1-BAC-1-main/src/proyectoFinal/Main.java</file>
+            <file>file:/C:/Users/Equipo/Downloads/Final-project-DAW1-BAC-1-main/src/proyectoFinal/vista/login/login/loginController.java</file>
+            <file>file:/C:/Users/Equipo/Downloads/Final-project-DAW1-BAC-1-main/src/proyectoFinal/vista/menuAdmin/menuAdminController.java</file>
+            <file>file:/C:/Users/Equipo/Downloads/Final-project-DAW1-BAC-1-main/src/proyectoFinal/vista/carrito/carritoController.java</file>
+            <file>file:/C:/Users/Equipo/Downloads/Final-project-DAW1-BAC-1-main/src/proyectoFinal/modelo/Pack.java</file>
+            <file>file:/C:/Users/Equipo/Downloads/Final-project-DAW1-BAC-1-main/src/proyectoFinal/modelo/Actividad.java</file>
+            <file>file:/C:/Users/Equipo/Downloads/Final-project-DAW1-BAC-1-main/src/proyectoFinal/vista/inicio/inicioController.java</file>
+            <file>file:/C:/Users/Equipo/Downloads/Final-project-DAW1-BAC-1-main/src/proyectoFinal/modelo/Tipo.java</file>
+            <file>file:/C:/Users/Equipo/Downloads/Final-project-DAW1-BAC-1-main/src/proyectoFinal/vista/menuAdmin/crearActividad/crearActividadController.java</file>
+            <file>file:/C:/Users/Equipo/Downloads/Final-project-DAW1-BAC-1-main/src/proyectoFinal/datos/bda/packDAO.java</file>
+        </group>
+    </open-files>
+</project-private>

@@ -30,7 +30,6 @@ public class Pack {
     private ArrayList<DetallePack> listaActividades = new ArrayList<>();
     private static int totalPacks = 1;
 
-    //Constructor(es)
     public Pack(String nombre, LocalDate fechaInicio, LocalDate fechaFinal, String descripcion) {
         this.nombre = nombre;
         this.fechaInicio = fechaInicio;
@@ -141,37 +140,19 @@ public class Pack {
         this.idPack = idPack;
     }
     
-    
-    //método toString
-
     @Override
     public String toString() {
         return "Pack "+idPack+": "+nombre+" - "+precio;
     }
-    
-    //calcular precio del pack
+
     public void calcularPrecioTotal(){
-        
         for (DetallePack linea : listaActividades) {
-            
             precio += linea.getPrecio();
-            
         }
-        
-        
     }
     
     public void addCarrito(DetallePack linea){
-        
         listaActividades.add(linea);
-        
     }
-    
-    //crear ticket
-    
-//    public void generarTicket(){
-//        
-//        
-//    }
     
 }

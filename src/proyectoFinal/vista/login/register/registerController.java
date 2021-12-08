@@ -51,19 +51,16 @@ public class registerController {
     String password1;
     String password2;
     int tlf_numero;
-    long tarjeta_numero;
+    int tarjeta_numero;
 
     public void initialize() {
 
         //Inicio la conexión
         try {
 
-            if (conectar.conectar("root", "1201", "packsturisticos")) {
+            if (conectar.conectar("root", "2002", "packsturisticos")) {
                 conexion = conectar.getConexion();
                 usuarioDAO.setConex(conexion);
-//                                    String texto="Saludos desde Apuntesdejava.com";
-//                    String encriptMD5=DigestUtils.md5Hex(texto);
-//                    System.out.println("md5:"+encriptMD5);
             }
 
         } catch (SQLException ex) {
@@ -79,6 +76,7 @@ public class registerController {
         tarjetaUser = this.tarjeta.getText();
         password1 = this.pwd.getText();
         password2 = this.pwd2.getText();
+        System.out.println(tarjetaUser);
         int errores = 0;
 
         try {
@@ -112,7 +110,7 @@ public class registerController {
         }
         if (errores == 0) {
             tlf_numero = Integer.parseInt(tlfUser);
-            tarjeta_numero = Long.parseLong(tarjetaUser);
+            tarjeta_numero = Integer.parseInt(tarjetaUser);
             return true;
         }
         return false;
@@ -122,7 +120,7 @@ public class registerController {
     private void register(ActionEvent event) {
         try {
             if (checkCampos()) {
-                user = new Usuario(nombreUser, mailUser, tlf_numero, tlf_numero, password1);
+                user = new Usuario(nombreUser, mailUser, tlf_numero, tarjeta_numero, password1);
                 //INSERT DEL OBJETO
                 if (!usuarioDAO.checkUsuarioYaRegistrado(user.getMail())) {
                     //Encriptar contrasena
@@ -136,6 +134,7 @@ public class registerController {
             }
         } catch (SQLException e) {
             herramientas.showAlertErr(e.getMessage());
+            System.out.println("ERROR: " + e.getErrorCode());
         }
     }
 

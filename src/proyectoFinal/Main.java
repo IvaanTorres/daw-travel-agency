@@ -11,7 +11,6 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        //Parent root = FXMLLoader.load(getClass().getResource("vista/inicio/inicio.fxml"));
         Parent root = FXMLLoader.load(getClass().getResource("vista/login/register/register.fxml"));
         primaryStage.setTitle("Sol Travel Experience");
         Image icono = new Image(this.getClass().getResource("img/iconoAPP.png").toString());

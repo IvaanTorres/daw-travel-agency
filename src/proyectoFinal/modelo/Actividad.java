@@ -132,8 +132,6 @@ public class Actividad {
         this.ubicacion = ubicacion;
     }
     
-
-    //to string
     @Override
     public String toString() {
         return "Actividad " + idActividad + ": " + nombre + " - " + precio;

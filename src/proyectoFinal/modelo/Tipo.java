@@ -25,8 +25,6 @@ public class Tipo {
 
     public Tipo() {
     }
-    
-    
 
     public String getId() {
         return id;
@@ -47,11 +45,5 @@ public class Tipo {
     @Override
     public String toString() {
         return nombre;
-    }
-    
-    
-   
-    
-    
-    
+    }  
 }

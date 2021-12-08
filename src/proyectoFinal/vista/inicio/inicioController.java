@@ -189,7 +189,7 @@ public class inicioController {
     }
 
     //SETEAR CAMPOS
-    private boolean changeFechas() { //REVISAR --------------------------
+    private boolean changeFechas() {
         if (pack.getListaActividades().isEmpty()) {
             return true;
         }
@@ -210,7 +210,7 @@ public class inicioController {
                 fechaFinPack.setDayCellFactory(camposHabilitados);
                 fechaFinPack.setDisable(false);
                 pack.setFechaFinal(fechaInicioPack.getValue().plusDays(1));
-                fechaFinPack.setValue(fechaInicioPack.getValue().plusDays(1)); //----
+                fechaFinPack.setValue(fechaInicioPack.getValue().plusDays(1));
             }
             
         }
@@ -219,7 +219,6 @@ public class inicioController {
     @FXML
     private void setFechaFinPack(ActionEvent event) {
         if (changeFechas()) {
-            
             pack.setFechaFinal(fechaFinPack.getValue());
         }
     }
@@ -276,7 +275,6 @@ public class inicioController {
         botonPausa.setOnMouseEntered(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent me) {
-
                 botonPausa.setCursor(Cursor.HAND);
             }
 

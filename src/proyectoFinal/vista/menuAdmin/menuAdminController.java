@@ -81,7 +81,6 @@ public class menuAdminController {
             listarAct.setConexion(conex);
             listarAct.setHerramientas(herramientas);
             listarAct.setDefault();
-//            listarAct.setDefault();
 
             Pane parentBoton = (Pane) botonCrear.getParent();
 

@@ -200,7 +200,7 @@ public class crearActividadController {
         
     }
 
-private void estiloEstrellas(String idCalidad) {
+    private void estiloEstrellas(String idCalidad) {
         switch (idCalidad) {
             case "cal1":
                 cal5.setStyle("-fx-fill: white; -fx-stroke: #0073ff");

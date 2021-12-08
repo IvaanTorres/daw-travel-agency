@@ -32,7 +32,7 @@ public class usuarioDAO {
     }
     
     public void registrarUsuario(Usuario user) throws SQLException{
-        String sql = "INSERT INTO usuarios VALUES (?, ?, ?, ?, ?, ?, ?)";
+        String sql = "INSERT INTO usuarios (id, rol, nombre, mail, telefono, tarjeta, `contraseña`) VALUES (?, ?, ?, ?, ?, ?, ?)";
         PreparedStatement ps = conex.prepareStatement(sql);
 
         ps.setInt(1, user.getId());

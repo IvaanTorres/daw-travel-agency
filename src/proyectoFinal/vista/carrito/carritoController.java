@@ -92,7 +92,6 @@ public class carritoController {
         carrito.setItems(obsevableActividad);
         carrito.getSelectionModel().setCellSelectionEnabled(true);
         //Asignamos las columnas
-//        id.setCellValueFactory(new PropertyValueFactory<>("idActividad"));
         nombre.setCellValueFactory(new PropertyValueFactory<>("nombreDetallePack"));
         numPers.setCellValueFactory(new PropertyValueFactory<>("numPlazas"));
         precioInd.setCellValueFactory(new PropertyValueFactory<>("precioBase"));
