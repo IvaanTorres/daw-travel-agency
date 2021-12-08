@@ -1,17 +1,73 @@
-# Java Final project 1º DAW (BAC+1)
 
-My team and I developed this app in 2/3 weeks as the "Programming" final project.
-As the first high-education year, we learn the bases of OOP thanks Java. We get the basic knowledge of programming besides MySQL concepts focused on Java environment.
+# Travel Agency - Desktop App
+Final project developed in team - 1º DAW
 
-Concerning the app, the main goal is creating new experiences for users/customers.
+"Sol Experience" consists in creating packs and experiences for every user who wants to travel to Málaga.
 
-First of all, you must sign up before using the app, then log in with your own user is mandatory in case you want to enter. Emphasize the whole interface has been designed thanks JavaFX, so it's a requirement to install/use JAVA-FX if you want to use it.
+It has its own admin menu, logging & role system and also, it creates a PDF ticket when a pack is purchased.
 
-The program uses data storaged in a database. Here we save all the information like, for instance, users (with encrypted passwords), activities in Malaga, user's packs experiences, detailed user's activities, etc. 
-We can switch between windows and stages, offering us a great experience in order to complete our own holydays pack. 
-Once we finished, we have the capacity to remove or clean the shopping cart or even, some activities which are in it in case we regret the choice. 
-Finally, once we are decided, we can finish our pack by clicking "Purchase". In addition, we notify that purchase and the creation of our own PDF ticket, storaged in a folder of our project named "tickets". 
-Since the whole app is completed by information which is storaged in thr database, we decided to load it in execution because is an effective way. Also, emphasize we can filter by price or quality stars the activities we want to show. 
-In addition, since our app has different roles (clients and admins), the option of creating, modifying or deleting activities is just available for admin users. These sections offer us the ease to create, modify or remove content in our app, saving it automatically in our data-base.
+## Technologies
+* Java & JavaFX
+* Scene Builder
+* CSS
+* Apache NetBeans IDE
 
-We use some external libraries such as iText for PDF tickets, ControlsFX or JFoenix for new components or even libraries to encrypt data.
+## Features
+* General
+	* Logging & role system.
+	* It retrieves experiences from database and show them dynamically.
+	* You can filter experiences by price, stars, etc.
+	* Modern info panels to report errors, information, etc.
+	* Creation of a PDF Ticket when a pack is purchased.
+* User role
+	* Create a pack
+	* Modify the pack
+		* Insert/read/modify/delete pack experiences.
+	* Purchase the pack.
+* Admin role
+	* Create new experiences.
+	* Modify existing experiences.
+	* Delete experiences.
+
+## Libraries
+* ControlsFX - v11.1.0
+* JFoenix - v9.0.10
+* Commons Codec - v1.15
+* ITextPDF - v5.4.0
+* MySQL-Connector - v8.0.24
+* JavaFX
+	* SDK - v17.0.1
+	* Javadoc - v17.0.1
+
+## Java Version
+(Java Plaform) JDK - v16
+
+## Setup
+### JavaFX SDK & Javadoc
+* Create a new library in the project and set all .jar files from "javafx-sdk-17.0.1/lib" into "Classpath" section.
+* Without leaving the library, set the directory "javafx-17.0.1-javadoc" itself into the "Javadoc" section.
+
+### VM Options ("Run" Properties Section)
+Type:
+````
+--module-path "C:\Users\Equipo\Desktop\java desktop app\javafx-sdk-17.0.1\lib" --add-modules javafx.controls,javafx.fxml,javafx.media,javafx.web --add-exports javafx.base/com.sun.javafx.event=ALL-UNNAMED
+````
+Being "C:\Users\Equipo\Desktop\java desktop app\javafx-sdk-17.0.1\lib" the path to change.
+
+### Database Connection Options
+* Go to the "proyectoFinal.vista.login.register" package and open the "registerController.java" file.
+* Change the necessary DB Options on the Initialize method.
+
+## Resources
+* All the project libraries (./src/librerias/).
+* .sql file with the whole database structrure (./src/BBDD/).
+* PDF Ticket files path (./src/proyectoFinal/tickets/).
+
+
+## Authors
+
+  
+
+Linkedin: [http://linkedin.com/in/ivan-torres-garcia](http://linkedin.com/in/ivan-torres-garcia)
+
+Linkedin: [http://linkedin.com/in/juan-carlos-soben-rodriguez](https://www.linkedin.com/in/juan-carlos-soben-rodriguez-4a7b8513b)
